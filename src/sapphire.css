@@ -1,0 +1,37 @@
+/* Styles for the Sapphire service pages. Built on the portal's existing colours (--brand, --line, ...). */
+.sapphire-bar { display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; padding:9px 20px; background:var(--deep); color:#fff; font-size:13px }
+.sapphire-bar span { opacity:.8 }
+.sapphire-bar a { color:#fff; font-weight:650; text-decoration:none; border-bottom:1px solid transparent }
+.sapphire-bar a:hover, .sapphire-bar a:focus-visible { border-bottom-color:#fff }
+.sapphire-brand { text-decoration:none }
+.sapphire-nav { display:flex; align-items:center; gap:12px; padding:12px; color:var(--muted); font-size:14px; font-weight:570; text-decoration:none; border-radius:9px }
+.sapphire-nav:hover { color:var(--brand); background:var(--soft) }
+.sapphire-nav.active { background:var(--soft); color:var(--brand); font-weight:720 }
+.sapphire-content { display:grid; gap:16px; padding-bottom:28px }
+.sapphire-subtitle { color:var(--muted); margin-top:6px }
+.sapphire-narrow { width:min(100%,720px) }
+.sapphire-two { display:grid; grid-template-columns:1fr 1fr; gap:12px }
+.sapphire-file { display:flex; align-items:center; gap:12px; flex-wrap:wrap; color:var(--muted); font-size:14px }
+.sapphire-actions, .sapphire-toolbar { display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 12px }
+.sapphire-row-actions { display:flex; gap:6px; flex-wrap:wrap }
+.sapphire-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; margin-bottom:12px }
+.sapphire-card { border-radius:12px; padding:16px; background:var(--hero); color:#fff; display:grid; gap:6px }
+.sapphire-card-top { display:flex; justify-content:space-between; align-items:center; font-weight:700; font-size:13px }
+.sapphire-card-top .MuiChip-root { background:#ffffffde }
+.sapphire-card-amount { font-size:28px; font-weight:780 }
+.sapphire-card-foot { font-size:12px; opacity:.88 }
+.sapphire-stats { display:flex; flex-wrap:wrap; gap:8px 22px; color:var(--muted); font-size:14px }
+.sapphire-stat-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:12px }
+.sapphire-stat { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 16px; display:grid; gap:6px }
+.sapphire-stat span { color:var(--muted); font-size:13px }
+.sapphire-stat strong { color:var(--deep); font-size:22px }
+.sapphire-tab { padding-top:14px }
+.sapphire-h3 { margin:20px 0 10px; font-size:16px; color:var(--deep) }
+.sapphire-note { color:var(--muted); font-size:12px; margin-top:3px; overflow-wrap:anywhere }
+.sapphire-mono { font-family:ui-monospace,Consolas,monospace; font-size:12px; overflow-wrap:anywhere }
+.sapphire-credit { color:#1b7a43; font-weight:650 }
+.sapphire-debit { color:#a23a3a; font-weight:650 }
+.sapphire-dialog-fields { display:grid; gap:14px; padding-top:8px !important }
+@media (max-width:760px) {
+  .sapphire-two { grid-template-columns:1fr }
+}
